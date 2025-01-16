@@ -7,3 +7,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const app = express();
+ 
+/**Added New Functionality */
+    // Middleware to parse JSON request bodies
+app.use(express.json());
